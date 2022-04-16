@@ -3,7 +3,7 @@ import express from "express";
 import userRoutes from "./routes/routes.js";
 
 const app = express(); // <- This is aur whole app
-const PORT = 8080; //deploying to cloudno.de
+const PORT = process.env.PORT || 3000; //deploying to cloudno.de
 
 // Specifying that we'll be using JSON
 app.use(express.json());
